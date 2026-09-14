@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>תמיכה — מעקב כספי</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;600;700&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F6F2E9;
+    --forest: #1F3D2B;
+    --forest-soft: #2E4F39;
+    --gold: #A47C2B;
+    --ink: #24312A;
+    --muted: #5B6B5E;
+    --line: #DED6C4;
+    --card: #FFFFFF;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Assistant', sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 72px 24px 56px;
+  }
+
+  .mark {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 700;
+    font-size: clamp(32px, 6vw, 44px);
+    line-height: 1.25;
+    margin: 0 0 18px;
+    color: var(--forest);
+  }
+
+  .lede {
+    font-size: 19px;
+    color: var(--muted);
+    margin: 0 0 40px;
+    max-width: 46ch;
+  }
+
+  .about {
+    font-size: 17px;
+    margin: 0 0 48px;
+    max-width: 52ch;
+  }
+
+  .contact-card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 32px;
+    margin: 0 0 56px;
+  }
+
+  .contact-card p {
+    margin: 0 0 14px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  .email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--forest);
+    text-decoration: none;
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 3px;
+  }
+
+  .email-link:hover,
+  .email-link:focus-visible {
+    color: var(--forest-soft);
+  }
+
+  .email-link:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+  }
+
+  .response-note {
+    margin: 18px 0 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--forest);
+    margin: 0 0 24px;
+  }
+
+  .faq {
+    margin: 0 0 48px;
+  }
+
+  .faq-item {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .faq-item:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .faq-item dt {
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0 0 8px;
+    color: var(--ink);
+  }
+
+  .faq-item dd {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15.5px;
+  }
+
+  footer {
+    font-size: 13px;
+    color: var(--muted);
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  footer p { margin: 0; }
+</style>
+</head>
+<body>
+<main>
+
+  <svg class="mark" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="סמל מעקב כספי">
+    <circle cx="28" cy="28" r="26" fill="#1F3D2B"/>
+    <path d="M28 6a22 22 0 0 1 0 44V6z" fill="#2E4F39"/>
+    <circle cx="28" cy="28" r="26" fill="none" stroke="#A47C2B" stroke-width="1.5"/>
+  </svg>
+
+  <h1>נשמח לעזור</h1>
+  <p class="lede">יש לכם שאלה, הצעה לשיפור, או משהו שלא עובד כמו שצריך? אנחנו קוראים כל הודעה שמגיעה.</p>
+
+  <p class="about">מעקב כספי היא אפליקציה למעקב הכנסות והוצאות לעובדי משמרות בישראל, עם חישוב שכר נטו לפי חוק וזיהוי אוטומטי של שבת וחג בכל משמרת.</p>
+
+  <div class="contact-card">
+    <p>הדרך הכי מהירה להגיע אלינו:</p>
+    <a class="email-link" href="mailto:maakav.kaspi@gmail.com">
+      maakav.kaspi@gmail.com
+    </a>
+    <p class="response-note">אנחנו משתדלים לענות תוך יום עד יומיים.</p>
+  </div>
+
+  <section>
+    <h2>שאלות נפוצות</h2>
+    <dl class="faq">
+      <div class="faq-item">
+        <dt>הנתונים שלי נשמרים בענן?</dt>
+        <dd>לא. כל ההכנסות, ההוצאות והמשמרות שלכם נשמרות אך ורק על המכשיר שלכם. אין שרת, ואין גיבוי חיצוני אוטומטי.</dd>
+      </div>
+      <div class="faq-item">
+        <dt>יש באפליקציה מעקב פרסומי?</dt>
+        <dd>לא. אין פרסומות ואין שיתוף נתונים עם רשתות פרסום. אין גם דיווח קריסות או איסוף שימוש מכל סוג — שום מידע לא עוזב את המכשיר.</dd>
+      </div>
+      <div class="faq-item">
+        <dt>מצאתי באג, מה עושים?</dt>
+        <dd>כתבו לנו למייל למעלה עם תיאור קצר של מה קרה ובאיזה מכשיר — זה עוזר לנו לתקן מהר יותר.</dd>
+      </div>
+      <div class="faq-item">
+        <dt>אפשר להציע פיצ'ר חדש?</dt>
+        <dd>בהחלט. חלק גדול מהפיצ'רים הקיימים נולדו בדיוק ככה.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <footer>
+    <p>מעקב כספי · צוות מעקב כספי</p>
+  </footer>
+
+</main>
+</body>
+</html>
