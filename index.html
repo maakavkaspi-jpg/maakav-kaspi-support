@@ -156,6 +156,16 @@
   }
 
   footer p { margin: 0; }
+
+  .policy-link {
+    color: var(--forest);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2px;
+  }
+
+  .policy-link:hover,
+  .policy-link:focus-visible { border-bottom-color: var(--gold); }
 </style>
 </head>
 <body>
@@ -203,7 +213,8 @@
   </section>
 
   <footer>
-    <p>מעקב כספי · צוות מעקב כספי</p>
+    <p><a class="policy-link" href="privacy.html">מדיניות פרטיות</a></p>
+    <p style="margin-top:8px;">מעקב כספי · צוות מעקב כספי</p>
   </footer>
 
 </main>
